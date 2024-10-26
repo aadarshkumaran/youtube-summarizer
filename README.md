@@ -1,15 +1,13 @@
 # YouTube Summarizer
-    #### Video Demo:  <URL HERE>
-    #### Description:
-    TODO
+### Video Demo:  [Demo Youtube Link](https://youtu.be/VCaVYADzhHI)
 
+#### Project Overview
 A tool that leverages AI to generate concise and accurate summaries of YouTube videos. This summarizer helps users save time by providing a quick overview of video content without watching the entire video.
 
 ## Table of Contents
 - [Description](#description)
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Installation and TODO](#installationandtodo)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
@@ -21,11 +19,11 @@ The YouTube Summarizer analyzes the content of a YouTube video and produces a sh
 - **AI-based Summarization**: Uses AI to generate summaries.
 - **Transcript Extraction**: Fetches transcripts directly from YouTube videos (if available).
 
-## Installation
+## Installation and TODO
 
 ### Prerequisites
 - [Python 3.x](https://www.python.org/)
-- [OpenAI API Key](https://aistudio.google.com/app/apikey) 
+- [GeminiAI API Key](https://aistudio.google.com/app/apikey) 
 
 ### TODO
 1. Clone the repository:
@@ -66,3 +64,6 @@ Feel free to submit issues or pull requests! Contributions are welcome.
 
 ## License
 This project is licensed under the MIT License.
+
+## Author
+Aadarsh 👉🏻 [@aadarshkumaran](https://x.com/aadarshkumaran/).
