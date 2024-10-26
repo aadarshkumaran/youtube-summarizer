@@ -8,8 +8,12 @@ from langchain.schema import Document  # For LangChain's document processing
 from dotenv import load_dotenv
 from cc_extractor import get_transcript
 
-load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+
+def api_loader():
+    load_dotenv()
+    genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+
+api_loader()
 
 def get_conversational_chain(context):
     prompt_template = """
@@ -27,6 +31,10 @@ def get_conversational_chain(context):
 
     return result
 
+def context_loader(youtube_url):
+    get_context = get_transcript(youtube_url)
+    return get_context
+
 
 def main():
     st.title("YouTube Transcript Summarizer")
@@ -37,7 +45,7 @@ def main():
         st.write("Extracting transcript and summarizing...")
 
         try:
-            context = get_transcript(youtube_url)
+            context = context_loader(youtube_url)
 
             summary = get_conversational_chain(context)
 
